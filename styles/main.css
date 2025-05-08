@@ -1,0 +1,37 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f0; /* Soft beige */
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* Next Circle Button */
+.next-circle {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f8edeb; /* Soft peach */
+    color: #e5989b; /* Dusty pink */
+    text-align: center;
+    line-height: 80px;
+    margin: 2rem auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.next-circle:hover {
+    transform: scale(1.05);
+    background: #e5989b;
+    color: white;
+}
+
+/* Page-Specific Styles */
+.letter, .poem, .meme-gallery, .video-message {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
