@@ -6,43 +6,53 @@
     <title>For Rajjo</title>
     <link rel="stylesheet" href="styles/main.css">
     <style>
-        /* Additional styling for this page */
+        body {
+            background: url('images/blur-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 3rem;
+            max-width: 600px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
         .handwritten {
             font-family: 'Dancing Script', cursive;
             font-size: 1.8rem;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
+            line-height: 1.8;
             color: #333;
-        }
-        .signature {
-            margin-top: 2rem;
-            font-style: italic;
         }
         .dots {
             letter-spacing: 0.3em;
-            margin-left: 0.3em;
+        }
+        .website {
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            margin-top: 2rem;
+            color: #555;
         }
     </style>
-    <!-- Add Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <div class="text-box">
         <div class="handwritten">
             <p>Thanks for this too Rajjo..</p>
             <p>You are here means tune Scrap book poori dekhi...</p>
             <p>Means a lot to me.</p>
             
-            <p style="margin-top: 3rem;">Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh...</p>
-            <p>Main baat ye hai ki isme m ne chatgpt ki help nhi li hai<span class="dots">.</span><span class="dots">.</span></p>
-            
-            <div class="signature">- Your Name</div>
-            
-            <a href="thankyou.html" class="next-circle">→</a>
+            <p style="margin-top: 2rem;">Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh...</p>
+            <p>Main baat ye hai ki isme m ne chatgpt ki help nhi li hai<span class="dots">..</span></p>
         </div>
-    </main>
+        <div class="website">www.your-website.com</div> <!-- Replace with your URL -->
+        <a href="thankyou.html" class="next-circle">→</a>
+    </div>
 </body>
 </html>
