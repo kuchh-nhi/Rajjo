@@ -3,52 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Rajjo</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>For My Best Friend</title>
     <style>
-        body {
-            background: url('images/blur-bg.jpg') no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
+        body, html {
+            height: 100%;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Dancing Script', cursive;
-            color: white;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        
+        .bg {
+            /* Background image to be replaced with your blur-bg.jpg */
+            background-image: url("images/blur-bg.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+        
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            max-width: 700px;
+            padding: 40px;
             text-align: center;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text visibility */
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
+        
         .message {
-            max-width: 600px;
-            padding: 2rem;
-            line-height: 1.8;
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 40px;
         }
-        .dots {
-            letter-spacing: 0.3em;
+        
+        .next-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
-        /* Next button (positioned absolutely at bottom) */
-        .next-circle {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(5px);
+        
+        .next-btn:hover {
+            background-color: #3e8e41;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="message">
-        <p>Thanks for this too Rajjo..</p>
-        <p>You are here means tune Scrap book poori dekhi...</p>
-        <p>Means a lot to me.</p>
+    <div class="bg"></div>
+    
+    <div class="content">
+        <div class="message">
+            <strong>"Thanks for this too Rajjo.. You are here means tune Scrap book poori dekhi... Means a lot to me."</strong>
+            <br><br>
+            <strong>"Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh... Main baat ye hai ki isme m ne chatgpt ki help nhi li hai"</strong>
+            <br><br>
+            <strong>"Kyuki m ne deepseek ki li hai, lol"</strong>
+        </div>
         
-        <p style="margin-top: 2rem;">Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh...</p>
-        <p>Main baat ye hai ki isme m ne chatgpt ki help nhi li hai<span class="dots">..</span></p>
+        <a href="thankyou.html" class="next-btn">Next Page →</a>
     </div>
-
-    <!-- Next button (floating) -->
-    <a href="thankyou.html" class="next-circle">→</a>
 </body>
 </html>
