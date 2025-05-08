@@ -7,53 +7,48 @@
     <link rel="stylesheet" href="styles/main.css">
     <style>
         body {
-            background: url('images/6118621783411245225_121.jpg') no-repeat center center fixed;
+            background: url('images/blur-bg.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .text-box {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 3rem;
-            max-width: 600px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-        .handwritten {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text visibility */
+        }
+        .message {
+            max-width: 600px;
+            padding: 2rem;
             line-height: 1.8;
-            color: #333;
         }
         .dots {
             letter-spacing: 0.3em;
         }
-        .website {
-            font-family: Arial, sans-serif;
-            font-size: 1rem;
-            margin-top: 2rem;
-            color: #555;
+        /* Next button (positioned absolutely at bottom) */
+        .next-circle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="text-box">
-        <div class="handwritten">
-            <p>Thanks for this too Rajjo..</p>
-            <p>You are here means tune Scrap book poori dekhi...</p>
-            <p>Means a lot to me.</p>
-            
-            <p style="margin-top: 2rem;">Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh...</p>
-            <p>Main baat ye hai ki isme m ne chatgpt ki help nhi li hai<span class="dots">..</span></p>
-            <p>deepseek ki li hai lol...<span class="dots">..</span></p>
-        </div>
-        <div class="website">www.your-website.com</div> <!-- Replace with your URL -->
-        <a href="thankyou.html" class="next-circle">→</a>
+    <div class="message">
+        <p>Thanks for this too Rajjo..</p>
+        <p>You are here means tune Scrap book poori dekhi...</p>
+        <p>Means a lot to me.</p>
+        
+        <p style="margin-top: 2rem;">Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh...</p>
+        <p>Main baat ye hai ki isme m ne chatgpt ki help nhi li hai<span class="dots">..</span></p>
     </div>
+
+    <!-- Next button (floating) -->
+    <a href="thankyou.html" class="next-circle">→</a>
 </body>
 </html>
