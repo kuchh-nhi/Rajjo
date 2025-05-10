@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>For You</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <title>Goodbye</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fcefee;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+    video, img {
+      max-width: 90%;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    textarea {
+      width: 80%;
+      height: 100px;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background-color: #ff5733;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c4412a;
+    }
+  </style>
 </head>
 <body>
-    <main>
-        <div class="video-message">
-            <h2>A Final Message</h2>
-            <p>(Upload your video to 'videos/goodbye.mp4' and add it here later.)</p>
-        </div>
-    </main>
+
+  <h2>ye video dekh, 2x ka option aaa rha hoga uska use kr sakti hai..</h2>
+
+  <video controls>
+    <source src="videos/6122665284210792068(1)(1).mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <img src="images/6122665284667032484_121.jpg" alt="apni Photo">
+
+  <p>
+    btana ye sab kaisa lagaa... tshirt, scrapbook, website... <br>
+    aur kuchh aapke shabd jo man me aaye aap neeche likh sakti ho... <br>
+    Mujhe pta chal jaayega ki tune website dekhi h, <br>
+    aur best hoga ki ek call ya whatsapp kr ke hi bta de, neeche bhi bta sakti h...
+  </p>
+
+  <form action="last.html" method="get">
+    <textarea name="feedback" placeholder="Apne shabd yaha likho..."></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+
 </body>
 </html>
