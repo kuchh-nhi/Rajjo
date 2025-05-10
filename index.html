@@ -7,12 +7,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            overflow: hidden;
-        }
+        html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
         
         .bg {
             /* Background image to be replaced with your blur-bg.jpg */
@@ -70,6 +71,29 @@
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
+ 
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .next-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
+
     </style>
 </head>
 <body>
