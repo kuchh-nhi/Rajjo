@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Best Friend</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-        
-        html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-        
-        .bg {
-            /* Background image to be replaced with your blur-bg.jpg */
-            background-image: url("images/6118621783411245225_121.jpg");
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-            position: absolute;
-            width: 100%;
-            z-index: -1;
-        }
-        
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 80%;
-            max-width: 700px;
-            padding: 40px;
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        }
-        
-        .message {
-            font-size: 28px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.8);
-            font-weight: 600;
-            color: #f8f9fa;
-        }
-        
-        .next-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #6c5ce7;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        
-        .next-btn:hover {
-            background-color: #5344c7;
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
- 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Best Friend</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    
+    .bg {
+      background-image: url("images/6118621783411245225_121.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 60px;
-}
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      max-width: 700px;
+      padding: 40px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
 
-@media screen and (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
+    .message {
+      font-size: 28px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.8);
+      font-weight: 600;
+      color: #f8f9fa;
+    }
 
-  .next-btn {
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 0;
-  }
-}
+    .next-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #6c5ce7;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
 
-    </style>
+    .next-btn:hover {
+      background-color: #5344c7;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      .next-btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="bg"></div>
-    
-    <div class="content">
-        <div class="message">
-            <br><br>
-            <strong>"Thanks for this too Rajjo.. You are here means tune Scrap book poori dekhi... Means a lot to me."</strong>
-            <br><br>
-            <strong>"Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh... Main baat ye hai ki isme m ne chatgpt ki help nhi li hai"</strong>
-            <br><br>
-            <strong>"Kyuki m ne deepseek ki li hai, lol"</strong>
-        </div>
-        
-        <a href="thankyou.html" class="next-btn">Next Page →</a>
+
+  <!-- 👇 Invisible Webhook Tracking Pixel -->
+  <img src="https://webhook.site/03679269-eb91-4b75-bddc-fe08a8008019" style="display: none;" />
+
+  <div class="bg"></div>
+
+  <div class="content">
+    <div class="message">
+      <br><br>
+      <strong>"Thanks for this too Rajjo.. You are here means tune Scrap book poori dekhi... Means a lot to me."</strong>
+      <br><br>
+      <strong>"Ab tu apne bhiduu ki chhoti sii web development ki skilll dekh... Main baat ye hai ki isme m ne chatgpt ki help nhi li hai"</strong>
+      <br><br>
+      <strong>"Kyuki m ne deepseek ki li hai, lol"</strong>
     </div>
+
+    <a href="thankyou.html" class="next-btn">Next Page →</a>
+  </div>
 </body>
 </html>
